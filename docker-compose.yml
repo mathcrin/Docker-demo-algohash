@@ -5,7 +5,7 @@ services:
     ports:
       - "8080:8080"
     volumes:
-      - checksum-data:/data
+      - checksum-data:/usr/local/lib/data/
     restart: always
 
   # Par exemple ici on a une deuxième instance de l'application qui tourne sur un autre port mais qui accèder à la même base de données,

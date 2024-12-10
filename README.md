@@ -24,7 +24,8 @@ Nous avons une application spring boot qui permet de hasher une chaine de caract
 ## Comment déployer l'application
 ### Sans docker-compose
 1. Installer docker sur votre machine
-2. `docker run -p 8080:8080 mathcrin/algohash`
+2. `docker volume create data`
+3. `docker run -v data:/data -p 8080:8080 mathcrin/algohash`
 
 ### Avec docker-compose
 1. Installer docker et docker-compose sur votre machine
