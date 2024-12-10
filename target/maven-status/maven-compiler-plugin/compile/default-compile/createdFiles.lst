@@ -1,0 +1,5 @@
+com\example\checksumapp\repository\ChecksumRepository.class
+com\example\checksumapp\model\ChecksumEntry.class
+com\example\checksumapp\ChecksumAppApplication.class
+com\example\checksumapp\controller\ChecksumController.class
+com\example\checksumapp\service\ChecksumService.class

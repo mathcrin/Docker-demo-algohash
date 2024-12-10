@@ -1,0 +1,9 @@
+2024-12-10 10:50:14 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CHECKSUM_ENTRY" not found (this database is empty); SQL statement:
+select c1_0.id,c1_0.algorithm,c1_0.checksum,c1_0.input from checksum_entry c1_0 [42104-214]
+2024-12-10 10:50:48 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CHECKSUM_ENTRY" not found (this database is empty); SQL statement:
+select c1_0.id,c1_0.algorithm,c1_0.checksum,c1_0.input from checksum_entry c1_0 [42104-214]
+2024-12-10 10:51:26 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CHECKSUM_ENTRY" not found (this database is empty); SQL statement:
+insert into checksum_entry (id, algorithm, checksum, input) values (default, ?, ?, ?) [42104-214]

@@ -1,0 +1,24 @@
+version: '3.8'
+services:
+  app:
+    image : mathcrin/algohash
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./checksum-data:/data
+    restart: always
+
+# Par exemple ici on a une deuxième instance de l'application qui tourne sur un autre port mais qui accèder à la même base de données,
+# pour de l'upscaling par exemple
+# Dans notre cas vu que j'utilise une database fichier simple, la deuxième application ne pourra pas accèder
+# au fichier de la BDD donc elle crashera, c'est juste pour une démonstration d'upscaling
+  app2:
+    image: mathcrin/algohash
+    ports:
+      - "8081:8080"
+    volumes:
+      - ./checksum-data:/data
+    restart: unless-stopped
+
+
+
