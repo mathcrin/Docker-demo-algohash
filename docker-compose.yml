@@ -12,13 +12,13 @@ services:
   # pour de l'upscaling par exemple
   # Dans notre cas vu que j'utilise une database fichier simple, la deuxième application ne pourra pas accèder
   # au fichier de la BDD donc elle crashera, c'est juste pour une démonstration d'upscaling
-  app2:
-    image: mathcrin/algohash
-    ports:
-      - "8081:8080"
-    volumes:
-      - checksum-data:/data
-    restart: unless-stopped
+#  app2:
+#    image: mathcrin/algohash
+#    ports:
+#      - "8081:8080"
+#    volumes:
+#      - checksum-data:/data
+#    restart: unless-stopped
 
 volumes:
   checksum-data:
