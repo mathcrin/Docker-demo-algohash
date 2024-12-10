@@ -11,6 +11,6 @@ FROM openjdk:17-jdk-slim
 VOLUME /tmp
 EXPOSE 8080
 COPY --from=build /home/app/target/*.jar /usr/local/lib/app.jar
-COPY /data /data
+COPY /data /usr/local/lib/data
 WORKDIR /usr/local/lib
 ENTRYPOINT ["java","-jar","./app.jar"]
